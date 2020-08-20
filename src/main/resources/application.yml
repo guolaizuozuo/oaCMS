@@ -5,7 +5,7 @@ spring:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://49.234.116.100:3306/storehousecms?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
-      username: root
+      username: daizhizhou
       password: 123456
       max-active: 20
       max-wait: 5000
