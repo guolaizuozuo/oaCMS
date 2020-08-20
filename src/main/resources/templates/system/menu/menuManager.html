@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>layout Layui</title>
+        <link rel="stylesheet" th:href="@{/static/ext/treeGird/design/css/layui.css}"  href="/static/ext/treeGird/design/css/layui.css">
+        <script th:src="@{/static/ext/treeGird/design/layui.js}" src="/static/ext/treeGird/design/layui.js"></script>
+
+    <style>
+        .layui-tree-head{
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body class="layui-layout-body" style="padding: 10px">
+        <a class="layui-btn layui-btn-primary"  id="btn">刷新</a>
+        <a class="layui-btn layui-btn-primary"  id="add">新增一行</a>
+        <a class="layui-btn layui-btn-primary"  onclick="print();">打印缓存对象</a>
+        <div>
+             <table id="treeTable" lay-filter="treeTable"></table>
+
+        </div>
+        <div id="menuRowBar" style="display: none;">
+            <button type="button" lay-event="edit" class="layui-btn layui-btn-sm"><span class="layui-icon layui-icon-edit"></span>更新</button>
+            <button type="button" lay-event="del" class="layui-btn layui-btn-sm layui-btn-danger"><span class="layui-icon layui-icon-delete"></span>删除</button>
+        </div>
+        <script>
+
+        </script>
+        <script th:src="@{/static/js/admin/menu/tree.js}"></script>
+    </body>
+</html>
