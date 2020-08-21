@@ -13,7 +13,7 @@ layui.use(['form', 'layer'], function () {
             if (res.code == 200) {
                 setTimeout(function () {
                    // top.layer.close(index);
-                    top.layer.msg("用户添加成功！");
+                    top.layer.msg("用户修改成功！");
                     //top.layer.closeAll("iframe");
                     parent.layer.closeAll(); //再执行关闭
                     //刷新父页面
