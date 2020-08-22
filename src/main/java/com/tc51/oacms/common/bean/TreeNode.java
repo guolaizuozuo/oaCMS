@@ -56,6 +56,7 @@ public class TreeNode {
     }
 
 
+
     public Integer getId() {
         return id;
     }
@@ -64,7 +65,7 @@ public class TreeNode {
         this.id = id;
     }
 
-    public Integer getPid() {
+        public Integer getPid() {
         return pid;
     }
 
@@ -103,6 +104,7 @@ public class TreeNode {
     public void setSpread(Boolean spread) {
         this.spread = spread;
     }
+
 
     public List<TreeNode> getChildren() {
         return children;
